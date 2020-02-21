@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "target" : "es6",
     "removeComments": true
   },
   "files": [
-      "03-commande.ts"
+      "04-exo.ts"
   ]
 }
