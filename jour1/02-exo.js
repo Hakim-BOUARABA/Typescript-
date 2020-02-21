@@ -32,7 +32,7 @@ console.log("manière 3 et majuscule");
 for (var _a = 0, tableau_2 = tableau; _a < tableau_2.length; _a++) {
     var jour = tableau_2[_a];
     var premierLettre = jour[0].toUpperCase();
-    var resteDuMot = jour.slice(1, 4);
+    var resteDuMot = jour.slice(1);
     console.log(premierLettre + resteDuMot);
 }
 // tsc 02-exo.ts && node 02-exo.js
