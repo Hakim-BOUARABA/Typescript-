@@ -58,7 +58,20 @@ maintenant();
 // nouvelle manière de garantir la portée des variables
 // export
 
-// créer un nouveau fichier
+// créer un nouveau fichier 09-exo.ts
+// ce fichier contient une variable de type objet
+// nom : formation
+// propriétés suivantes
+    // duree = 2
+    // unite = "mois"
+    // sujet = javascript
+    // matieres = ["node","ajax","typescript"]
+// faire ensorte que la variable formation ne puisse pas être modifiée par un autre script 
+// afficher dans la console la phrase suivante
+// la formation en javascript dure 2 mois et dispose de 3 matières
+// transpiler ce script en js et l'exécuter dans le shell 
+
+
 
 
 
