@@ -10,3 +10,5 @@
 })()
 
 // tsc 09-exo.ts && node 09-exo.js
+
+// créer un nouveau fichier 10-typage.ts
