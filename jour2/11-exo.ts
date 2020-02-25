@@ -47,3 +47,7 @@ console.log(p.html());
 const a = new Article("Blog" , "page de présentation", ["photoshop", "illustrator"]);
 console.log(a.html());
 // tsc 11-exo.ts && node 11-exo.js
+
+// export import @ décorateur 
+// 12-main.ts // 12-lib.ts
+
