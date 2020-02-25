@@ -18,3 +18,4 @@ const p = new Portfolio("présentation", "travaille n° 1");
 console.log(p.footer());
 // tsc 09-exo.ts && node 09-exo.js
 
+// 10-extends-suite.ts

@@ -38,8 +38,37 @@ class Chat extends Animal{
         `;
     }
 }
-const c = new Chat("croquette", 4, "roux"); // surcharger la méthode du parent
+const c = new Chat("croquette", 4, "roux"); // surcharger la méthode du parent = polymorphisme 
 console.log(c.description()) // méthode du parent
 console.log(c.information()) // méthode de l'enfant
 
 // tsc 10-extends-suite.ts && node 10-extends-suite.js
+
+// créer une class Page 
+// titre 
+// contenu
+// méthode retourner du html 
+/* <article>
+    <h2>titre class</h2>
+    <p>contenu class</h2>
+</article> */
+
+// créer une autre class qui Article qui étend Page
+// 3 propriétés 
+// titre
+// contenu
+// categories
+// méthode  html 
+/* <article>
+    <h2>titre class</h2>
+    <p>contenu class</h2>
+    <ul>
+        <li>catégories[0]</li>
+        <li>catégories[1]</li>
+    </ul>
+</article> */
+
+// utiliser la class Page avec la méthode  retourner html
+// utiliser la class Article avec la méthode  retourner html
+
+// https://sharemycode.fr/68c
