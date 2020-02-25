@@ -19,9 +19,13 @@ class Phone { //nom de la class
     numero : string ; // propriétés de la class  
     proprietaire : string ;
 
-    call() :void{ // méthode de class 
+    call() :string{ // méthode de class 
         const texte = `j'appelle le ${this.numero} de ${this.proprietaire}`;
-        console.log(texte);
+        return texte;
+    }
+
+    verifInfos() :void{
+        console.log(this.numero , this.proprietaire)
     }
 }
 
@@ -40,8 +44,36 @@ const tel = new Phone() ;
 tel.numero = "010101010101";
 tel.proprietaire = "Alain" ;
 
-tel.call(); // ne pas oublier les parenthèses à la fin de call()
+const resultat = tel.call(); // ne pas oublier les parenthèses à la fin de call()
 // pour exécuter la méthode 
 
 // tsc 02-class.ts && node 02-class.js
+
+
+// class = RANGER EN SECURITE plein de concepts
+// variables
+// fonction 
+
+// créer une class 
+    // Vehicule 
+    // possède deux propriétés 
+    // marque : string
+    // annee : chiffre 
+
+    // méthode rouler 
+    // renvoie rien (pas de return ) => :void 
+    // instructions quelle va réaliser 
+    // dans la console : je roule depuis annee de la class
+
+    // méthode description
+    // renvoyer une chaine de caractères 
+    // instructions quelle va réaliser 
+    // concaténation 
+    // je suis un véhicule de la marque de la class 
+
+    // https://sharemycode.fr/68c
+
+
+
+
 
