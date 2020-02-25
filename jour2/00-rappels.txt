@@ -1,0 +1,92 @@
+rappels 
+
+Typescript : surensemble de langage => apporte des concepts complémentaires à Javascript
+pour le rendre plus robuste 
+
+=> utiliser dès demain sur Angular 
+=> Typescript n'est compris par les navigateurs / Node => il faut le transpiler 
+(
+    traduire des fichiers ts => js 
+)
+
+pour réaliser la traduction, il faut télécharger un logiciel  : tsc
+
+=> npm i -g tsc 
+
+----------------------
+
+tsc fichier.ts => générer un fichier fichier.js 
+
+----------------------
+
+tsc dispose d'options (drapeaux)
+    --target => préciser dans quelle version de js je veux traduction 
+    --removeComments => ne pas inclure les commentaires 
+    -- watch => ne pas avoir à relancer la traduction dès que l'on modifier un fichier ts
+    attention il y a au moins 60 options possibles 
+
+----------------------
+
+pour éviter d'avoir à taper toutes les options créé un fichier tsconfig.json et lui donner toutes les options 
+
+pour générer ce fichier tsc --init 
+
+
+----------------------
+
+Typescript => typage 
+ajout de de langage le typage 
+
+const a :any ; // 
+
+const a :string = "hello";
+const b : number = 2 ;
+const test : boolean = 10 > 3 ;
+
+type complexe => type scalaire 
+tableau et les objets
+
+const liste : string[] = ["lundi", "mardi"] ;
+const liste : (string|number)[] = ["lundi", "mardi", 2] ;
+
+const articles : <Array>Object = [{},{},{}]
+
+----------------------
+
+interface => permet d'être plus précis sur les objets 
+
+interface Article {
+    id:number,
+    titre : string,
+    status : boolean
+}
+
+const article : Article = {
+    id: 1,
+    titre : "first",
+    status : true
+}
+
+----------------------
+
+les fonctions, concept clé / essentiel en javascript
+
+function genererArticle ( text:string , taille : number ) :string {
+    return "du texte";
+}
+
+si jamais vous avez une fonction qui n'a pas le mot clé return (par exemple une fonction qui fait un console.log())
+
+function verification (  ) :void {
+    console.log(".....");
+}
+
+const resultat = verification (  )
+
+=> https://sharemycode.fr/sdw
+
+
+
+
+
+
