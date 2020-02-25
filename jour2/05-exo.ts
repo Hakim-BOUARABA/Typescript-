@@ -22,3 +22,9 @@ class Telephone{
     }
 }
 // tsc --removeComments 05-exo.ts && node 05-exo.js
+
+// créer le fichier 06-constructeur-compact.ts
+
+// extend /super / portée des variables => héritage
+
+// decorateur 
